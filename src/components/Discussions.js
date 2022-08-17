@@ -1,10 +1,10 @@
 import Discussion from "./Discussion";
 
-export const Discussions = () => {
+export const Discussions = ({discussionData}) => {
     return (
       <section className="discussion__wrapper">
         <ul className="discussions__container">
-          <Discussion />
+          <Discussion discussionData={discussionData} />
         </ul>
       </section>
     );

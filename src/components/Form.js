@@ -1,4 +1,4 @@
-export const Form = () => {
+export const Form = ({discussionData}) => {
   return (
     <section className="form__container">
       <form action="" method="get" className="form">
