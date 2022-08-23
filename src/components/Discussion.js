@@ -1,4 +1,4 @@
-export const Discussion = ({discussionData}) => {
+export const Discussion = () => {
   return (
     <li className="discussion__container">
       <div className="discussion__avatar--wrapper">
