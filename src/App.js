@@ -24,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>My Agora States</h1>
       <Form handleSubmit={handleSubmit} discussions={discussions} setDiscussions={setDiscussions}/>
       <Discussions discussions={discussions}/>
     </div>
