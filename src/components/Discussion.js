@@ -1,4 +1,13 @@
-export const Discussion = ({discussions}) => {
+import { useSelector } from "react-redux";
+import store from "../store/store";
+import { fetchDiscussions } from "../actions/fetchDiscussions"
+
+store.dispatch(fetchDiscussions());
+
+export const Discussion = () => {
+  const state = useSelector(state => state);
+  const discussions = state.discussions;
+
   return (
     <ul className="discussions__container">
       {discussions.map((x,idx) => {

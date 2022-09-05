@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { addDiscussion } from '../actions/actions';
+import store from "../store/store";
 
-export const Form = ({handleSubmit}) => {
+
+export const Form = () => {
   const[name, setName] = useState('');
   const[title, setTitle] = useState('');
   const nameSave = (inputName) => {
@@ -9,6 +12,12 @@ export const Form = ({handleSubmit}) => {
   const titleSave = (inputTitle) => {
     setTitle(inputTitle);
   };
+  
+  const handleSubmit = (author, title) => {
+    let createdAt = new Date().toLocaleString()
+    store.dispatch(addDiscussion(author, title, createdAt));
+  }
+
   return (
     <section className="form__container">
       <form action="" method="get" className="form" onSubmit={ (e) => {e.preventDefault()} }>
