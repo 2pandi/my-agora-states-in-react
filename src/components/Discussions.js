@@ -1,9 +1,9 @@
 import Discussion from "./Discussion";
 
-export const Discussions = ({discussions}) => {
+export const Discussions = () => {
     return (
       <section className="discussion__wrapper">
-          <Discussion discussions={discussions}/>
+          <Discussion />
       </section>
     );
 }
