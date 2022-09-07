@@ -5,8 +5,8 @@ import { fetchDiscussions } from "../actions/fetchDiscussions"
 store.dispatch(fetchDiscussions());
 
 export const Discussion = () => {
-  const state = useSelector(state => state);
-  const discussions = state.discussions;
+  const state = useSelector(state => state.discussions);
+  const discussions = state;
 
   return (
     <ul className="discussions__container">
