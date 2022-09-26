@@ -4,7 +4,7 @@ import { fetchDiscussionsRequest, fetchDiscussionsSuccess, fetchDiscussionsError
 export const fetchDiscussions = () => {
     return dispatch => {
         dispatch(fetchDiscussionsRequest());
-        axios.get('http://localhost:4000/discussions/')
+        axios.get('http://localhost:4001/discussions/')
         .then(res => {
             dispatch(fetchDiscussionsSuccess(res.data));
         })

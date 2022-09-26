@@ -10,6 +10,7 @@
 
 # production
 /build
+index.bundle.js.LICENSE.txt
 
 # misc
 .DS_Store
